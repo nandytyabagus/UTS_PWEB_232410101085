@@ -1,22 +1,9 @@
 @extends('layout.app')
 
 @section('content')
-    <main class=" flex justify-center items-center py-8 bg-gray-400">
-        <div class="shadow-xl rounded-2xl p-6 w-1/2 h-[80vh] bg-white">
-            <table class=" w-full">
-                <thead class="sticky top-0 z-10">
-                    <tr>
-                        <th class="px-4 py-3">Nama Produk</th>
-                        <th class="px-4 py-3">Kategori</th>
-                        <th class="px-4 py-3">Deskripsi</th>
-                        <th class="px-4 py-3">Harga</th>
-                        <th class="px-4 py-3 text-center">Aksi</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                </tbody>
-            </table>
+    <div class="w-7xl mx-auto py-10 space-y-6">
+        <div class="bg-white shadow-md rounded-xl p-8 h-[1000px]">
+            <h1 class="text-2xl font-bold text-center">Pengelolaan Catatan Harianmu</h1>
         </div>
-    </main>
+    </div>
 @endsection
