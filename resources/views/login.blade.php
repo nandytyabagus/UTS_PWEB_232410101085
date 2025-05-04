@@ -8,7 +8,7 @@
                 <h2 class="text-3xl font-semibold">Login</h2>
                 <p class="text-lg">Selamat datang</p>
             </div>
-            <form action="/login" method="POST" class="space-y-4">
+            <form action="{{ route('login') }}" method="POST" class="space-y-4">
                 @csrf
 
                 <div class="space-y-1">
