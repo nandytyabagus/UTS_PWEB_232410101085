@@ -22,7 +22,7 @@
                 </div>
 
                 <button type="submit"
-                    class="w-full px-4 py-3 mt-3 text-white bg-amber-700 rounded-xl hover:bg-blue-600 transition">
+                    class="w-full px-4 py-3 mt-3 text-white bg-amber-600 rounded-xl hover:bg-amber-700 transition">
                     Masuk
                 </button>
             </form>
