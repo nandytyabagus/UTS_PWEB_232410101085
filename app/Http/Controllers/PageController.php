@@ -121,7 +121,7 @@ class PageController extends Controller
 
     public function logout()
     {
-        Session::forget('user');
+        Session::flash('user');
         return redirect()->route('showlogin');
     }
 
