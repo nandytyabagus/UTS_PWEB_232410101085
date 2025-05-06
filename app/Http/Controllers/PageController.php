@@ -18,7 +18,7 @@ class PageController extends Controller
             'id' => '2',
             'username' => 'agus',
             'password' => 'agus123',
-            'nama' => 'Bagus Putranto',
+            'nama' => 'Agus Setiawan',
         ]
     ];
 
@@ -112,7 +112,7 @@ class PageController extends Controller
             if($user['username'] === $request->username && $user['password'] === $request->password)
             {
                 Session::put('user', ['id' => $user['id'],'username' => $user['username'],'nama' => $user['nama'],'lastLogin' => now()
-                ]);;
+                ]);
                 return redirect()->route('dashboard');
             }
         }
@@ -121,7 +121,7 @@ class PageController extends Controller
 
     public function logout()
     {
-        Session::flash('user');
+        Session::forget('user');
         return redirect()->route('showlogin');
     }
 
