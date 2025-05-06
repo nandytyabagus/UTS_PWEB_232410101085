@@ -10,10 +10,14 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "andreiio/blade-iconoir": "^4.7",
+        "andreiio/blade-remix-icon": "^3.6",
         "blade-ui-kit/blade-heroicons": "^2.6",
+        "codeat3/blade-devicons": "^1.8",
         "hasnayeen/blade-eva-icons": "^2.1",
         "laravel/framework": "^12.0",
-        "laravel/tinker": "^2.10.1"
+        "laravel/tinker": "^2.10.1",
+        "owenvoke/blade-entypo": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
