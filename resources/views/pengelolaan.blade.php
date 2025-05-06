@@ -16,7 +16,7 @@
                 <tbody>
                     @foreach ($activitys as $activity)
                         <tr>
-                            <td class="px-4 py-3 border-r">{{ $activity['Jumlah'] }}</td>
+                            <td class="px-4 py-3 border-r">Rp {{ number_format($activity['Jumlah'], 0, ',', '.') }}</td>
                             <td class="px-4 py-3 border-r">{{ $activity['type'] }}</td>
                             <td class="px-4 py-3">{{ date('d-m-Y H:i', strtotime($activity['waktu'])) }}</td>
                         </tr>
@@ -26,7 +26,7 @@
 
 
             <div class="text-center">
-                <form method="POST" action="{{ route('hitungTotal') }}">
+                <form method="POST" action="{{ route('hitungTotal', ['id' => $id]) }}">
                     @csrf
                     <button type="submit" class="px-4 py-3 bg-amber-600 hover:bg-amber-700 text-white rounded-md">Hitung
                         Total</button>

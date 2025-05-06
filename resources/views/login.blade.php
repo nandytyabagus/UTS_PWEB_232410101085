@@ -13,12 +13,21 @@
 
                 <div class="space-y-1">
                     <label for="username" class="block text-md font-medium ml-1">Username</label>
-                    <input type="text" name="username" id="username" class="px-4 py-2 rounded-xl border w-full">
+                    <input type="text" name="username" id="username"
+                        class="px-4 py-2 rounded-xl border w-full @error('username') border-red-500 @enderror"
+                        value="{{ old('username') }}">
+                    @error('username')
+                        <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                    @enderror
                 </div>
 
                 <div class="space-y-1">
                     <label for="password" class="block text-md font-medium ml-1">Password</label>
-                    <input type="password" name="password" id="password" class="px-4 py-2 rounded-xl border w-full">
+                    <input type="password" name="password" id="password"
+                        class="px-4 py-2 rounded-xl border w-full @error('password') border-red-500 @enderror">
+                    @error('password')
+                        <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                    @enderror
                 </div>
 
                 <button type="submit"

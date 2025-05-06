@@ -11,12 +11,13 @@
 </head>
 
 <body class="bg-gray-200">
-    <x-navbar></x-navbar>
+    <x-navbar :id="$id" />
     <main>
         @yield('content')
     </main>
     <x-footer></x-footer>
     @stack('scripts')
 </body>
+
 
 </html>
